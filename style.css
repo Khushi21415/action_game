@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E3F2FD;
+}
+.container{
+    width:65vmin;
+    height: 70vmin;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 10px;
+    background:rgb(201, 138, 201);
+}
+.game-detail{
+    color: #1b0704;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 27px;
+    display:flex;
+    justify-content: space-between;
+}
+.playing-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30,1fr) / repeat(30,1fr);
+    background-image: url('/nexus_tasks/Action game/image/background1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.playing-board .food{
+    background: rgb(163, 163, 22);
+    border-radius: 7px;
+}
+.playing-board .head{
+    background: rgb(201, 91, 164);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    border-top-left-radius:5px;
+}
+.controler{
+    display: flex;
+    justify-content: space-between;
+}
+.controler i{
+    color: powderblue;
+    padding: 25px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width:calc(100% / 4);
+    border-left: 2px solid pink;
+}
